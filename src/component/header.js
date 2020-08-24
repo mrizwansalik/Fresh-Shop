@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Content from './content';
-import { NavLink,  BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { NavLink as Link,  BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Free_template from './header-component/Free_css_template';
 import Premuimem_template from './header-component/Premuimem_templates';
 import Css_layout from './header-component/css_layout';
@@ -12,7 +12,7 @@ class Header extends Component {
     render() { 
         return ( 
               
-          <Router>
+          
             
             
             <div>
@@ -31,10 +31,10 @@ class Header extends Component {
                 </div></div>
               <nav id="topnav">
                 <ul className='d-flex justify-content-between m-2'>
-                  <div className='nav-item'><NavLink className='nav-link' to="/free-css-templates" title="Free CSS Templates">Free CSS Templates</NavLink></div>
-                  <div className='nav-item'><NavLink className='nav-link' to="/commercial-templates" title="Premium CSS Templates">Premium CSS Templates</NavLink></div>
-                  <div className='nav-item'><NavLink className='nav-link' to="/free-css-layouts" title="Free CSS Layouts">Free CSS Layouts</NavLink></div>
-                  <div className='nav-item'><NavLink className='nav-link' to="/free-css-menus" title="Free CSS Menus">Free CSS Menus</NavLink></div>
+                  <div className='nav-item'><Link className='nav-link' to="/free-css-templates" title="Free CSS Templates">Free CSS Templates</Link></div>
+                  <div className='nav-item'><Link className='nav-link' to="/commercial-templates" title="Premium CSS Templates">Premium CSS Templates</Link></div>
+                  <div className='nav-item'><Link className='nav-link' to="/free-css-layouts" title="Free CSS Layouts">Free CSS Layouts</Link></div>
+                  <div className='nav-item'><Link className='nav-link' to="/free-css-menus" title="Free CSS Menus">Free CSS Menus</Link></div>
                 </ul>
               </nav>
             </header>
@@ -50,14 +50,8 @@ class Header extends Component {
          
           </div>
           
-          <Switch>
-              <Route exact path='/free-css-templates' component={Free_template} />
-              <Route exact path='/commercial-templates' component={Premuimem_template} />
-              <Route exact path='/free-css-layouts' component={Css_layout} />
-              <Route exact path='/free-css-menus' component={Css_menu} />
-            </Switch>
       
-        </Router>
+        
         );
     }
 }
