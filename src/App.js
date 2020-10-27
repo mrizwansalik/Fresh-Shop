@@ -10,7 +10,6 @@ import Home from './component/Home'
 import Footer from './component/footer';
 import Navbar from './component/navbar';
 import Header from './component/header';
-// import Content from './component/content';
 import Free_template from './component/header-component/Free_css_template';
 import Premuimem_template from './component/header-component/Premuimem_templates';
 import Css_layout from './component/header-component/css_layout';
@@ -27,6 +26,7 @@ function App() {
       <Switch>
       <Route exact path='/' component={Main}/>
       <Route exact path='/home' component={Home}/>
+      <Route exact path='/home/:userId' component={Home}/>
       <Route exact path='/submit-a-template' component={Submit}/>
       <Route exact path='/contact-us' component={Contact}/>
       <Route exact path='/search' component={Search}/>

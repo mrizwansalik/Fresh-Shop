@@ -20,22 +20,6 @@ const Navbar = () => {
             </nav>
           </div>
         </div>
-
-
-    //      <nav className="container">
-    //     <div className="d-flex justify-content-end">
-    //         <div className=''>
-    //             <div className='d-flex text-secondary'>
-    //                <div className='nav-item'><Link className='nav-link' to='/home'>Home</Link></div>
-    //                <div className='nav-item'><NavLink className='nav-link' to='/submitatemplate'>Submit a Template  </NavLink></div>
-    //                <div className='nav-item'><NavLink className='nav-link' to='/contact'>Contact us  </NavLink></div>
-    //                <div className='nav-item'><NavLink className='nav-link' to='/search'>Search  </NavLink></div>
-    //                <div className='nav-item'><NavLink className='nav-link' to='/advertisement'>Advertise</NavLink></div>
-    //             </div>
-    //         </div>
-    //     </div>
-
-    // </nav> 
     );
 }
  

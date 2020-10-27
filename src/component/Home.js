@@ -3,10 +3,32 @@ import Aside from './navigation/aside';
 import Five_hotel from './images/five-hotel.jpg'
 import Go_tour from './images/go-tours.jpg'
 import Mirasa from './images/miresa.jpg'
+import {Link } from 'react-router-dom'
+
+const users = [
+  {
+    name: `Arsalan`,
+  },
+  {
+    name: `Waheed`,
+  },
+  {
+    name: `Zain`,
+  },
+];
+
 
 const Home = () => {
+
+
     return ( <div>
      <div>
+     <h3>Users Page</h3>
+      {users.map((user, index) => (
+        <h5 key={index}>
+          <Link to={`/home/${index + 1}`}>{user.name}'s Page</Link>
+        </h5>
+      ))}
         
         {/* ################################################################################################ */}
         
